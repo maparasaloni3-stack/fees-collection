@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 6px;
+        }
+        .amount {
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="title">Your Transaction is Successful</div>
+
+
+<p>Hello ${parentName},</p> <br/>
+<p>Congratulations! Your payment is successfull with Skiply school Excellence for ${studentName} student}</p>
+<br/>
+<p>Transaction details: </p>
+<table>
+
+    <tr><td>Student Name</td><td>${studentName}</td></tr>
+    <tr><td>Student ID</td><td>${studentId}</td></tr>
+    <tr><td>Reference Number</td> <td>${receiptNumber}</td></tr>
+   <tr><td>Transaction Date</td><td>${transactionDate}</td></tr>
+    <tr><td>Card</td><td>**** **** **** ${cardLast4}</td></tr>
+    <tr><td> Payment Mode </td> <td>${paymentMode}</td></tr>
+</table>
+
+<br/>
+
+<p> Purchase Details </p>
+<div class="amount">
+    Total Amount: AED ${amount}
+</div>
+
+</body>
+</html>
