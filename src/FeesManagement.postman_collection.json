@@ -1,0 +1,68 @@
+{
+  "info": {
+    "_postman_id": "ecd5ccf1-c166-4914-be01-af1c1a984472",
+    "name": "FeesManagement",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "7648018"
+  },
+  "item": [
+    {
+      "name": "collectFee",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\r\n\"amount\":500,\r\n\"paymentMode\":\"Visa\",\r\n\"email\":\"saloni@gmail.com\",\r\n\"studentId\":\"1\",\r\n\"parentName\":\"Shekhar\",\r\n\"cardNumber\":\"4367\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/receipts/collectFee",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "receipts",
+            "collectFee"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "viewReceipt",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\r\n\"amount\":500,\r\n\"paymentMode\":\"Visa\",\r\n\"email\":\"saloni@gmail.com\",\r\n\"studentId\":\"1\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/receipts/collectFee",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "receipts",
+            "collectFee"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
